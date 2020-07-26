@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'apnic'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('apnic');
+    expect(app.pageLimit).toEqual(10);
   });
 
   it('should render title', () => {

@@ -1,0 +1,23 @@
+<div class="dashboard_single_course">
+    <div class="dashboard_single_course_thumb">
+        <img [src]="course.thumbnail" class="img-fluid" alt="">
+    </div>
+    <div class="dashboard_single_course_caption">
+        <div class="dashboard_single_course_head">
+            <div class="dashboard_single_course_head_flex">
+                <span class="dashboard_instructor">Course ID: {{course.id}}</span>
+                <h4 class="dashboard_course_title">{{course.name}}</h4>
+                <div class="dashboard_rats">
+                    <span>({{course.language}})</span>
+                </div>
+            </div>
+            <div class="dc_head_right">
+                <h4 class="dc_price_rate theme-cl">{{course.formattedDuration}}</h4>
+            </div>
+        </div>
+        <div class="dashboard_single_course_des">
+            <p>{{course.description}}</p>
+            <p><a [href]="course.viewDetailsURL" target="_blank"><i class="fa fa-globe mr-3"></i>More Information</a></p>
+        </div>
+    </div>
+</div>
